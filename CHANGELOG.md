@@ -1,3 +1,43 @@
+### v3.3.4 (2015-09-17):
+
+#### CRUFT FOR THE CRUFT GODS
+
+What I call "cruft", by which I mean, files sitting around in
+your `node_modules` folder, will no longer produce warnings in
+`npm ls` nor during `npm install`. This brings npm@3's behavior
+in line with npm@2.
+
+* [``]()
+  [#9285](https://github.com/npm/npm/pull/9586)
+  Stop warning about cruft in module directories
+  ([@iarna](https://github.com/iarna))
+
+###
+
+* [``]()
+  [#9433](https://github.com/npm/npm/issues/9433)
+  Give better error messages for invalid urls in the dependecy list.
+  ([@jamietre](https://github.com/jamietre))
+
+#### MODULE UPDATES
+
+* [`e266979`](https://github.com/npm/npm/commit/e266979)
+  retry@0.8.0 ((@tim-kos)[https://github.com/tim-kos])
+* [`e2e7e79`](https://github.com/npm/npm/commit/e2e7e79)
+  normalize-package-data@2.3.3 ((@iarna)[https://github.com/iarna])
+* [`6d4ebff`](https://github.com/npm/npm/commit/6d4ebff)
+  sha@2.0.1 ((@ForbesLindesay)[https://github.com/ForbesLindesay])
+* [`09a9c7a`](https://github.com/npm/npm/commit/09a9c7a)
+  semver@5.0.3 ((@isaacs)[https://github.com/isaacs])
+* [`745000f`](https://github.com/npm/npm/commit/745000f)
+  node-gyp@3.0.3 ((@rvagg)[https://github.com/rvagg])
+
+#### SUB DEP MODULE UPDATES
+
+* [`f2800db`](https://github.com/npm/npm/commit/f2800db)
+  request@2.62.0 ((@simov)[https://github.com/simov])
+
+
 ### v3.3.3 (2015-09-10):
 
 This short week brought us brings us a few small bug fixes, a
