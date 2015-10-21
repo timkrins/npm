@@ -122,7 +122,10 @@ function setup () {
     path.join(dep, 'package.json'),
     JSON.stringify(dependency, null, 2)
   )
-  fs.writeFileSync(path.join(dep, 'bin', 'foo'), foo, { mode: '0755' })
+  // cannot set mode on node 0.8 writeFileSync, so create first
+  var fd = fs.openSync(path.join(dep, 'bin', 'foo'), 'w', '0755')
+  fs.closeSync(fd)
+  fs.writeFileSync(path.join(dep, 'bin', 'foo'), foo)
 }
 
 function cleanup () {
